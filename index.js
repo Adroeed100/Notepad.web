@@ -13,12 +13,14 @@ app.get('/', (req, res) => {
     fs.readdir(`./files`, (err, files) => {
         if(err) throw err;
         console.log(files);
+        console.log('User is in index.ejs page')
         res.render("index", {files: files});
     })
 })
 
 app.get('/file/:filename', (req, res) => {
     fs.readFile(`./files/${req.params.filename}`, "utf-8", (err, filedata) => {
+        console.log('User is in the show.ejs page')
         res.render('show', {filename: req.params.filename, filedata: filedata});
     })
 })
@@ -31,5 +33,7 @@ app.post('/create', (req, res) => {
 })
 
 
-app.listen(3000); 
+app.listen(3000, () => {
+    console.log('Server running at http://localhost:3000');
+}); 
 
