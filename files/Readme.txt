@@ -1,1 +1,0 @@
-This website is for writing notes. It accepts title name and contents to write inside it and then displays it in the frontend.
