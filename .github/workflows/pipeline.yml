@@ -3,9 +3,9 @@ name: Node.js CI/CD
 # 1. Triggers: When should this pipeline run?
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "copilot/fix-github-actions-build-and-test" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "copilot/fix-github-actions-build-and-test" ]
 
 # 2. Jobs: What should the pipeline do?
 jobs:
