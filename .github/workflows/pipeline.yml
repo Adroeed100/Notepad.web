@@ -9,10 +9,6 @@ on:
 
 # 2. Jobs: What should the pipeline do?
 jobs:
-
-  Initiate:
-    echo: "Building"
-
   # CI Phase: Build and Test
   build-and-test:
     runs-on: ubuntu-latest
