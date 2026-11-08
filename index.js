@@ -18,6 +18,10 @@ app.get('/', (req, res) => {
     })
 })
 
+app.get('/void', (req, res) => {
+    console.log("this is a void page");
+})
+
 app.get('/file/:filename', (req, res) => {
     fs.readFile(`./files/${req.params.filename}`, "utf-8", (err, filedata) => {
         console.log('User is in the show.ejs page')
