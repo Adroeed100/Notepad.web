@@ -45,5 +45,4 @@ jobs:
     - name: Deploy to production
       run: |
         echo "Deploying application..."
-        # Replace this echo with your actual deployment script 
-        # (e.g., SSH into a server, push to AWS/Heroku, or build a Docker image)
+        
